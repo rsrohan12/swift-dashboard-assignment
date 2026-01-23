@@ -72,7 +72,7 @@ const Dashboard = () => {
           <div className="flex flex-wrap items-center gap-2">
             <SortButton
               field="postId"
-              label="Post ID"
+              label="Post Id"
               currentField={filters.sort.field}
               currentDirection={filters.sort.direction}
               onToggle={toggleSort}

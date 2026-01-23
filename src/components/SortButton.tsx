@@ -1,6 +1,6 @@
 import { ArrowUp, ArrowDown, ArrowUpDown } from 'lucide-react';
-import { SortDirection, SortField } from '@/types/api';
 import { cn } from '@/lib/utils';
+import type { SortDirection, SortField } from '@/types/api';
 
 interface SortButtonProps {
   field: SortField;
