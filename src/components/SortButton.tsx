@@ -4,7 +4,7 @@ import type { SortDirection, SortField } from '@/types/api';
 
 interface SortButtonProps {
   field: SortField;
-  label: string;
+  label: any;
   currentField: SortField;
   currentDirection: SortDirection;
   onToggle: (field: SortField) => void;
