@@ -33,7 +33,7 @@ const SortButton = ({
     <button
       onClick={() => onToggle(field)}
       className={cn(
-        "flex items-center gap-1.5 px-3 py-1.5 rounded border text-sm font-medium transition-colors",
+        "flex items-center gap-2 px-4 py-2 rounded border text-sm font-medium transition-colors",
         isActive
           ? "border-primary bg-primary/10 text-primary"
           : "border-border hover:bg-muted"
