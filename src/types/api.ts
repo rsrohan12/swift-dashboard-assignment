@@ -23,8 +23,8 @@ export interface User {
 }
 
 export interface Comment {
-  postId: number;
   id: number;
+  postId: number;
   name: string;
   email: string;
   body: string;
@@ -35,13 +35,13 @@ export type SortDirection = 'asc' | 'desc' | null;
 export type SortField = 'postId' | 'name' | 'email' | null;
 
 export interface SortState {
-  field: SortField;
   direction: SortDirection;
+  field: SortField;
 }
 
 export interface FilterState {
   search: string;
-  page: number;
-  pageSize: number;
   sort: SortState;
+  pageSize: number;
+  page: number;
 }
