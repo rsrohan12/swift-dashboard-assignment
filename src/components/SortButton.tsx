@@ -1,4 +1,4 @@
-import { ArrowUp, ArrowDown, ArrowUpDown } from 'lucide-react';
+import { ArrowUp, ArrowDown, ArrowUpDown, UserCog } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import type { SortDirection, SortField } from '@/types/api';
 
@@ -25,6 +25,9 @@ const SortButton = ({
     }
     if (currentDirection === 'asc') {
       return <ArrowUp className="h-4 w-4" />;
+    }
+    else{
+      return <UserCog className="h-4 w-4" />
     }
     return <ArrowDown className="h-4 w-4" />;
   };
