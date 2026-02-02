@@ -26,7 +26,7 @@ const SortButton = ({
     if (currentDirection === 'asc') {
       return <ArrowUp className="h-4 w-4" />;
     }
-    else{
+    else if(currentDirection === 'desc' && isActive){
       return <UserCog className="h-4 w-4" />
     }
     return <ArrowDown className="h-4 w-4" />;
